@@ -1,6 +1,14 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-
+const greeting = () => {
+  const firstName = 'Roberto';
+  return () => {
+    const lastName = 'Ramirez';
+    return `Hello! My name is ${firstName} ${lastName}!`;
+  }
+} 
+const statement = greeting();
+console.log(statement());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
